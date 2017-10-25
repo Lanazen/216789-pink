@@ -5,6 +5,9 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Pink</title>
+    <link rel="preload" href="fonts/opensans.woff2" as="font">
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font">
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font">
     <link rel="stylesheet" type="text/css" href="css/style.min.css">
     <script src="https://api-maps.yandex.ru/2.0-stable/?load=package.standard&lang=ru-RU" type="text/javascript"></script>
     <script>
@@ -66,7 +69,7 @@
       <section class="intro  intro--index">
         <div class="intro__wrapper  intro__wrapper--index">
           <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
-          <a class="intro__btn  btn" href="#">Скачать приложение</a>
+          <a class="intro__btn  btn" href="https://www.apple.com/itunes/">Скачать приложение</a>
           <div class="intro__list">
             <a class="intro__item  intro__item--apple" href="https://www.apple.com/itunes/">
               <span class="visually-hidden">Apple</span>
@@ -163,9 +166,11 @@
                 <p class="price__name">База</p>
                 <span class="price__value">1,99 USD</span>
               </th>
-              <th class="price__header  price__header--standart  price__header--hit">
-                <p class="price__name">Стандарт</p>
-                <span class="price__value">3,99 USD</span>
+              <th class="price__header  price__header--standart">
+                <div class="price__hit">
+                  <p class="price__name">Стандарт</p>
+                  <span class="price__value">3,99 USD</span>
+                </div>
               </th>
               <th class="price__header  price__header--unlim">
                 <p class="price__name">Анлим</p>

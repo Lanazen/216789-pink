@@ -76,6 +76,8 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  z-index: 20;
+
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.jpg");
   }
@@ -95,7 +97,7 @@
     background-size: 100% auto;
   }
 
-  /*&::after {
+  &::after {
     content: url("../img/icon-map-marker.svg");
     width: 36px;
     height: 36px;
@@ -103,7 +105,8 @@
     display: block;
     top: 95px;
     left: 45.5%;
-  }*/
+    z-index: -10;
+  }
 }
 
 /*--TABLET--*/
